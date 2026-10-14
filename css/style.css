@@ -1,0 +1,18 @@
+main {
+    max-width: 820px;
+}
+
+.plain-form input, .plain-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.plain-form label { 
+    font-weight: 600; 
+}
+.plain-form .field { 
+    margin-bottom: 16px; 
+}

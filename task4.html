@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="bg-light border-bottom p-3" aria-label="Main navigation">
+        <div class="container d-flex flex-wrap align-items-center gap-3">
+            <strong>Assignment 4</strong>
+            <a href="index.html" class="text-decoration-none">Home</a>
+            <a href="task0.html" class="text-decoration-none">Task 0</a>
+            <a href="task1.html" class="text-decoration-none">Task 1</a>
+            <a href="task2.html" class="text-decoration-none" aria-current="page">Task 2</a>
+            <a href="task3.html" class="text-decoration-none">Task 3</a>
+            <a href="task4.html" class="text-decoration-none">Task 4</a>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h1 class="h3">Task 4 - Registration Form</h1>
+        <p class="text-secondary">Responsive Bootstrap registration form with HTML5 validation.</p>
+
+        <form action="success.html" class="row g-3 was-validated">
+            <div class="col-md-6">
+                <label for="first-name" class="form-label">First Name *</label>
+                <input id="first-name" type="text" class="form-control" required minlength="2" maxlength="40">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter at least 2 characters.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="last-name" class="form-label">Last Name *</label>
+                <input id="last-name" type="text" class="form-control" required minlength="2" maxlength="40">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter at least 2 characters.</div>
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email *</label>
+                <input id="email" type="email" class="form-control" placeholder="student@example.com" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password *</label>
+                <input id="password" type="password" class="form-control" minlength="8" required autocomplete="new-password">
+                <div class="invalid-feedback">At least 8 characters required.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="confirm" class="form-label">Confirm Password *</label>
+                <input id="confirm" type="password" class="form-control" minlength="8" required autocomplete="new-password">
+                <div class="invalid-feedback">At least 8 characters required.</div>
+            </div>
+            <fieldset class="col-md-6">
+                <legend class="h6">Gender *</legend>
+                <div class="form-check">
+                    <input id="male" type="radio" value="male" class="form-check-input" required>
+                    <label for="male" class="form-check-label">Male</label>
+                    <div class="invalid-feedback">Choose one option.</div>
+                </div>
+                <div class="form-check">
+                    <input id="female" name="gender" type="radio" value="female" class="form-check-input">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+            </fieldset>
+            <fieldset class="col-md-6">
+                <legend class="h6">Hobbies</legend>
+                <div class="form-check">
+                    <input id="coding" type="checkbox" class="form-check-input">
+                    <label for="coding" class="form-check-label">Coding</label>
+                </div>
+                <div class="form-check">
+                    <input id="music" type="checkbox" class="form-check-input">
+                    <label for="music" class="form-check-label">Music</label>
+                </div>
+                <div class="form-check">
+                    <input id="sports" type="checkbox" class="form-check-input">
+                    <label for="sports" class="form-check-label">Sports</label>
+                </div>
+            </fieldset>
+            <div class="col-12">
+                <label for="country" class="form-label">Country *</label>
+                <select id="country" class="form-select" required>
+                    <option value="">Choose a country</option>
+                    <option value="kazakhstan">Kazakhstan</option>
+                    <option value="uzbekistan">Uzbekistan</option>
+                    <option value="kyrgyzstan">Kyrgyzstan</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="valid-feedback">Country selected.</div>
+                <div class="invalid-feedback">Choose a country.</div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
